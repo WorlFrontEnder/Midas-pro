@@ -1,0 +1,37 @@
+@import 'mixin/fonts';
+.exchanges {
+   background-color: $black;
+   padding-bottom: 190px;
+   .exchanges-in{
+    max-width: 910px;
+    width: 100%;
+    margin: 0 auto;
+    h2{
+      @include font(900, 48px);
+      color: $white;
+      line-height: 62px;
+      text-align: center;
+      padding: 100px 0 100px;
+    }
+    .exchanges-left,
+    .exchanges-right{
+      max-width: 285px;
+      width: 100%;
+      float: left;
+      .buy-btn,
+      .buy-btn{
+        @extend %header-btn;
+        @include font(900, 18px);
+        background-color: $white;
+        color: $blue;
+        margin: 45px auto 0;
+        width: 200px;
+        height: 60px;
+      }
+    }
+
+    .exchanges-right{
+        float: right;
+      }
+   }
+}

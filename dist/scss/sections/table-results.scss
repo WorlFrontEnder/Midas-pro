@@ -1,0 +1,91 @@
+@import 'mixin/fonts';
+.table-results-main {
+    background-color: $black;
+   p {
+    color: $white;
+    text-align: center;
+    @include font(normal, 14px);
+    line-height: 26px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: -80px;
+  }
+  .table-results{
+    background-color: $white;
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 545px;
+    position: relative;
+    top: -150px;
+    .table-results-header{
+      width: 95%;
+      margin: 0 auto;
+      padding-top: 30px;
+      .table-results-tr{
+        width: 100%;
+        padding: 15px 0;
+        .table-results-th{
+          display: inline-block;
+          width: 12.1%;
+          @include font(normal, 12px);
+          color: $blue2;
+          &:last-of-type{
+            text-align: right;
+          }
+          &:nth-child(5),
+          &:nth-child(6),
+          &:nth-child(7){
+            text-align: right;
+          }
+        }
+        .table-results-td{
+          display: inline-block;
+          width: 12.1%;
+          @include font(normal, 13px);
+          color: $black2;
+          &:last-of-type{
+            text-align: right;
+          }
+          &:nth-child(5),
+          &:nth-child(6),
+          &:nth-child(7){
+            text-align: right;
+          }
+         }
+         .sell,
+         .buy{
+          &:before{
+           display: block;
+           width: 8px;
+           height: 8px;
+           background-color: #E55541;
+           float: left;
+           content: "";
+           border-radius: 10px;
+           margin: 5px 7px 0 0;
+         }
+        }
+
+        .buy{
+          &:before{
+            background-color: #00D983;
+           }
+          }
+      }
+      .line-table{
+        border: none;
+        border-bottom: 1px solid #D8D8D8;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.fon{
+  display: none;
+}

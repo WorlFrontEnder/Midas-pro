@@ -1,0 +1,35 @@
+//- start variables 
+@import 'variables/color';
+
+//- start restart
+@import 'restart/restart';
+
+//- start component
+@import 'component/btn';
+
+//- start sections
+@import 'sections/header';
+@import 'sections/trading';
+@import 'sections/results';
+@import 'sections/table-results';
+@import 'sections/specification';
+@import 'sections/our';
+@import 'sections/developer';
+@import 'sections/wallets';
+@import 'sections/exchanges';
+@import 'sections/footer';
+
+//- start adaptive 
+@import 'adaptive/header';
+@import 'adaptive/trading';
+@import 'adaptive/results';
+@import 'adaptive/table-results';
+@import 'adaptive/specification';
+@import 'adaptive/our';
+@import 'adaptive/developer';
+@import 'adaptive/wallets';
+@import 'adaptive/exchanges';
+@import 'adaptive/footer';
+
+
+@import 'mixin/fonts';

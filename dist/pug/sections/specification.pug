@@ -1,0 +1,70 @@
+div(class="specification" id="Specs")
+ .specification-in
+  h2 Specification
+  .table-specification
+   .table-specification-header
+    .table-specification-td Block, Start
+    .table-specification-td Block, End
+    .table-specification-td Reward
+    .table-specification-td MN
+    .table-specification-td PoS
+    .table-specification-td ~ROI
+   
+   mixin spec-table(start, end, reward, mn, pos, roi)
+    .table-specification-hr
+     .table-specification-td
+      b= start 
+     .table-specification-td
+      b= end 
+     .table-specification-td
+      b= reward
+     .table-specification-td
+      b= mn 
+     .table-specification-td
+      b= pos
+     .table-specification-td
+      b= roi
+
+   +spec-table('1', '1000', '0.50', '0.40', '0.10', '655,04%')
+   +spec-table('10000', '20000', '1,00', '0,80', '0.20', '990,23%')
+   +spec-table('20000', '30000', '1,50', '1,20', '0.30', '1301,32%')
+   +spec-table('30000', '40000', '2,00', '1,60', '0.40', '1230,34%')
+   +spec-table('40000', '50000', '2,50', '2,00', '0.50', '1230,34%')
+   +spec-table('50000', '60000', '3,00', '2,40', '0.60', '1185,36%')
+   +spec-table('60000', '70000', '3,50', '2,80', '0.70', '1121,02%')
+   +spec-table('70000', '80000', '4,00', '3,20', '0.80', '1051,09%')
+   +spec-table('80000', '90000', '5,00', '4,00', '1.00', '1082,59%')
+   +spec-table('80000', '90000', '5,00', '4,00', '1.00', '1082,59%')
+   +spec-table('90000', '100000', '6,00', '4,80', '1.20', '1068,36%')
+   +spec-table('100000', '140000', '5,00', '4,00', '1.00', '755,74%')
+   +spec-table('140000', '160000', '5,00', '4,00', '1.00', '530,04%')
+   +spec-table('160000', '180000', '5,00', '4,00', '1.00', '451,74%')
+   +spec-table('180000', '200000', '5,00', '4,00', '1.00', '347,48%')
+   +spec-table('200000', '250000', '5,00', '3,20', '0.80', '235,35%')
+   +spec-table('250000', '300000', '3,50', '2,80', '0.70', '170,77%')
+   +spec-table('300000', '350000', '3,00', '2,40', '0.60', '127,60%')
+   +spec-table('350000', '400000', '3,00', '2,40', '0.60', '114,23%')
+   +spec-table('400000', '450000', '3,00', '2,40', '0.60', '103,40%')
+   +spec-table('450000', '500000', '3,00', '2,40', '0.60', '94,45%')
+
+
+  .table-specification2
+    mixin spec-table2(name, fline)
+     .table-specification-hr
+      .table-specification-td
+       b= name
+      .table-specification-td
+       b= fline
+
+    +spec-table2('Coin name:', 'Fline')
+    +spec-table2('Ticker:', 'FLN')
+    +spec-table2('Type:', 'POS/MN')
+    +spec-table2('Algorithm:', 'Custom')
+    +spec-table2('Masternode Collateral:', '1000 FLN')
+    +spec-table2('Masternode Reward:', '80%')
+    +spec-table2('Staking [POS] Reward:', '20%')
+    +spec-table2('Block Time:', '60 sec')
+    +spec-table2('Total Supply:', '5 000 000 FLN')
+    +spec-table2('Premine:', '2% [100000 FLN]')
+    +spec-table2('Maturity time:', '6 hours')
+    +spec-table2('Stake minimum:', '50 FLN')

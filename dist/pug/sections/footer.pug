@@ -1,0 +1,28 @@
+footer(class="footer cleafrix")
+ h2 Social media
+
+ ul.footer-social
+  mixin footer-social(href, target, src, alt)
+   li
+    a(href= href, target= target)
+     img(src= src, alt= alt)
+
+  +footer-social('https://discordapp.com/invite/mWQgZtZ', '_blank', 'images/icon6.svg', '')
+  +footer-social('https://web.telegram.org/#/im?p=s1389231809_7181426626513836697', '_blank', 'images/icon7.svg', '')
+  +footer-social('https://twitter.com/Flinecoin', '_blank', 'images/icon8.svg', '')
+  +footer-social('https://bitcointalk.org/index.php?topic=5110330.new#new', '_blank', 'images/icon9.svg', '')
+  +footer-social('https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=fline@protonmail.com', '_blank', 'images/icon10.svg', '')
+
+
+ .footer-bottom
+  a( href="https://midas.investments/" target="_blank") Midas
+
+  ul.footer-menu
+   mixin footer-menu(href, target, text)
+    li
+     a(href= href, target= target)= text
+
+   +footer-menu('https://discordapp.com/invite/mWQgZtZ', '_blank', 'Help with marketing new project')
+   +footer-menu('https://github.com/flinecoin', '_blank', 'Github')
+
+  span.copyright © 2017-2019

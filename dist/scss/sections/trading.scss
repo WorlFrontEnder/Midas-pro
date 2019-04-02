@@ -1,0 +1,44 @@
+@import 'mixin/fonts';
+.trading {
+  background: #1A1A1A;
+  height: 770px;
+  .trading-in{
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+
+    .trading-left{
+      float: left;
+      max-width: 605px;
+      width: 100%;
+      h2{
+        @include font(900, 36px);
+        line-height: 62px;
+        color: $white;
+        padding-top: 100px;
+      }
+      p{
+       color: $white;
+       @include font(normal, 14px);
+       line-height: 26px;
+       max-width: 470px;
+       width: 100%;
+       padding-top: 70px;
+      }
+      .trading-btn{
+        @extend %header-btn;
+        background-color: $blue;
+        margin-top: 70px;
+        color: $white;
+        @include font(900, 18px);
+      }
+    }
+    .trading-right{
+      margin-top: 110px;
+      float: right;
+      background: url(../images/img2.png) no-repeat 0 0;
+      width: 635px;
+      height: 597px;
+    }
+  }
+}

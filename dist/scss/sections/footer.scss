@@ -1,0 +1,61 @@
+@import 'mixin/fonts';
+.footer{
+  background-color: $white;
+  max-width: 1260px;
+  width: 100%;
+  margin: 0 auto;
+  
+h2{
+  @include font(900, 48px);
+  color: $black2;
+  line-height: 62px;
+  text-align: center;
+  padding: 75px 0;
+ }
+ .footer-social{
+  max-width: 440px;
+  width: 100%;
+  margin: 0 auto;
+  li{
+    display: inline-block;
+    margin: 0 50px 0 0;
+    &:last-of-type{
+      margin: 0;
+    }
+  }
+ }
+ .footer-bottom{
+   overflow: hidden;
+   padding: 50px 0;
+   a{
+    @include font(900, 20px);
+    color: $blue2;
+    float: left;
+   }
+   .footer-menu{
+     max-width: 385px;
+     width: 100%;
+     float: left;
+     margin: 3px 0 0 390px;
+    li{
+      display: inline-block;
+      margin: 0 25px 0 0;
+      &:last-of-type{
+        margin: 0;
+      }
+     a{
+       color: $blue2;
+       @include font(700, 16px);
+       line-height: 22px;
+     }
+    }
+   }
+   .copyright{
+    display: block;
+    float: right;
+    @include font(normal, 16px);
+    color: $black;
+    padding-top: 3px;
+   }
+ }
+}

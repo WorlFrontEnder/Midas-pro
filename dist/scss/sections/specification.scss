@@ -1,0 +1,77 @@
+@import 'mixin/fonts';
+.specification {
+  background-color: $black;
+  overflow: hidden;
+  height: 1000px;
+  .specification-in {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    h2 {
+     color: $white;
+     @include font(900, 50px);
+     text-align: center;
+     padding: 110px 0 70px;
+  }
+ }
+}
+
+
+.table-specification {
+    float: left;
+    max-width: 745px;
+    width: 100%;
+  .table-specification-header {
+     border-bottom: 1px solid $blue3;
+     padding-bottom: 20px;
+   .table-specification-td {
+     display: table-cell;
+     color: $blue2;
+     @include font(normal, 16px);
+     line-height: 24px;
+     width: 136px;
+     padding: 0 0 0 17px;
+  }
+ }
+ .table-specification-hr {
+    border-bottom: 1px solid $blue3;
+    padding: 7px 0;
+    .table-specification-td{
+      display: table-cell;
+      width: 136px;
+      padding: 0 0 0 21px;
+      b {
+        color: $white;
+        @include font(bold, 16px);
+     }
+    }
+  }
+}
+
+
+.table-specification2 {
+  float: right;
+  max-width: 490px;
+  width: 100%;
+  margin-top: 45px;
+  .table-specification-hr{
+    border-top: 1px solid $blue3;
+    padding: 0px 0 1px 0;
+    .table-specification-td {
+      width: 245px;
+      display: table-cell;
+      padding: 4.08% 25px;
+      b {
+        color: $white;
+        @include font(700, 16px);
+     }
+     &:last-of-type{
+     text-align: right;       
+   }
+  }
+  &:last-of-type{
+    border-bottom: 1px solid $blue3;
+    padding: 3px 0 3px 0;
+  }
+ }
+}

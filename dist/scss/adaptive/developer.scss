@@ -1,0 +1,148 @@
+@media (max-width:1580px){
+ .development{
+  .development-in{
+   .table-development{
+     max-width: 700px;
+     .table-development-tr{
+      .table-development-td{
+       width: 190px;
+     }
+    }
+   }
+  }
+  .development-left{
+    max-width: 40%;
+   }
+ }
+}
+
+
+
+@media (max-width:1180px){
+ .development{
+  .development-in{
+      max-width: 980px;
+   .table-development{
+     max-width: 600px;
+    }
+   }
+  .development-left{
+    max-width: 36%;
+    h2{
+     margin: 0 0 0 20px;
+     font-size: 40px;
+   }
+  }
+ }
+}
+
+
+
+
+@media (max-width:1080px){
+ .development{
+  .development-in{
+    max-width: 800px;
+  .table-development{
+    max-width: 500px;
+    .table-development-tr{
+     .table-development-td{
+       p{
+       font-size: 12px;
+      }
+     }
+    }
+   }
+  }
+ .development-left{
+  max-width: 36%;
+   h2{
+    margin: 0 0 0 20px;
+    font-size: 30px;
+    width: 270px;
+   }
+  }
+ }
+}
+
+
+
+
+
+@media (max-width:840px){
+.development{
+ .development-in{
+   max-width: 600px;
+   .table-development{
+     max-width: 350px;
+   .table-development-tr{
+    .table-development-td{
+     p{
+      font-size: 12px;
+      line-height: 20px;
+     }
+     b{
+      font-size: 15px;
+     }
+    }
+   }
+  }
+ }
+ .development-left{
+  max-width: 36%;
+  h2{
+   margin: 0 0 0 20px;
+   font-size: 25px;
+   width: 270px;
+   line-height: 40px;
+   }
+  }
+ }
+}
+
+
+
+
+
+@media (max-width:680px){
+.development{
+    padding: 0px 0 0;
+   .development-in{
+     max-width: 300px;
+     margin-top: -240px;
+     padding-top: 240px;
+   .table-development{
+      max-width: 350px;
+   .table-development-tr{
+    .table-development-td{
+      p{
+       font-size: 12px;
+       line-height: 20px;
+       width: 180px;
+      }
+      b{
+       font-size: 15px;
+       width: 75px;
+       display: block;
+      }
+     }
+    }
+   }
+  }
+  .development-left{
+    max-width: 300px;
+    float: none;
+    position: relative;
+    top: 0;
+    margin: 0 auto;
+   h2{
+    font-size: 31px;
+    width: 270px;
+    line-height: 49px;
+    text-align: center;
+    padding: 70px 0 70px;
+    margin: 0 auto;
+   }
+  }
+ }
+}

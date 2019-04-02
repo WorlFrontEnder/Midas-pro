@@ -1,0 +1,57 @@
+@media (max-width:990px){
+.exchanges {
+  .exchanges-in{
+    max-width: 700px;
+  }
+ }
+}
+
+
+@media (max-width:750px){
+.exchanges {
+  .exchanges-in{
+    max-width: 600px;
+    .exchanges-right{
+     a{
+       margin-top: 8px;
+      display: block;
+    }
+   }
+  }
+ }
+}
+
+
+
+
+
+@media (max-width:750px){
+.exchanges {
+  padding-bottom: 90px;
+   .exchanges-in{
+     max-width: 300px;
+     h2{
+      font-size: 30px;
+      padding: 50px 0 50px;
+     }
+   .exchanges-right,
+   .exchanges-left{
+       float: none;
+       margin: 0 auto;
+    a{
+     margin-top: 8px;
+     display: block;
+    }
+    .buy-btn{
+      margin: 25px auto 0;
+      float: none;
+    }
+   }
+   .exchanges-right{
+    float: none;
+    overflow: hidden;
+    margin: 50px auto 0;
+   }
+  }
+ }
+}

@@ -1,0 +1,60 @@
+header(class="header clearfix")
+ .header-in
+  .header-top
+   a(class="logo" href="#")
+    img(src="images/logo.svg" alt="Midas" title="Midas")
+
+   button(type="button" class='mobil-button')
+    span
+    span
+    span
+
+   ul.top-menu
+    mixin top-menu(href, target, text)
+     li
+      a(href= href target= target)= text
+        
+    +top-menu('#team', '', 'Team')
+    +top-menu('https://mn.investments/fine-masternode-benefits/', '_blank', 'Lightpaper')
+    +top-menu('#Road', '', 'Road map')
+    +top-menu('#Wallets', '', 'Wallets')
+    +top-menu('#Specs', '', 'Specs')
+    +top-menu('https://fln.ccore.online/', '_blank', 'Explorer')
+   
+
+
+   .header-middle
+    .header-left
+     h1 Fline-High-profitable trading bots financed by masternodes
+    
+     a(class="header-btn" href="#trading") Trading results
+     
+     
+     ul.social-btn
+      mixin top-social-btn(href, img, alt)
+       li
+        a(href= href target="_blank")
+         img(src= img, alt= alt)
+     
+      +top-social-btn('https://discordapp.com/invite/mWQgZtZ', 'images/icon13.png', '')
+      +top-social-btn('https://web.telegram.org/#/im?p=s1389231809_7181426626513836697', 'images/icon14.png', '')
+      +top-social-btn('https://twitter.com/Flinecoin', 'images/icon15.png', '')
+      +top-social-btn('https://bitcointalk.org/index.php?topic=5110330.new#new', 'images/icon16.png', '')
+      +top-social-btn('https://mail.google.com/mail/u/0/?view=cm&amp;fs=1&amp;tf=1&amp;source=mailto&amp;to=fline@protonmail.com', 'images/icon17.png', '')
+   
+
+
+    .header-right
+     .header-content
+      mixin items(span, h2, p)
+       .item
+        span= span
+        h2= h2 
+        p= p
+      
+      +items('01', 'BitMex Bots', 'From 800 to 6 000% yearly profits in BTC without using leverages. Proved by backtests and 6 months of real trades')
+      +items('02', 'Buy-Back model', '50% of the bots income is used to buyback coins from exchange')
+      +items('03', 'Benefits', 'Lesser fees, trading signals, the access to use bots through fiduciary management')
+
+     a(class="fancybox" data-fancybox="" href="https://www.youtube.com/watch?v=5gbrj5xB8Pk")
+      img(img src="images/img.jpg" alt="")

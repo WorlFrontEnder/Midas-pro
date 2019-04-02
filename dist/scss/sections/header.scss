@@ -1,0 +1,149 @@
+@import 'mixin/fonts';
+.header {
+  background: #1A1A1A url(../images/bg.svg) no-repeat left top;
+  height: 820px;
+  
+  .header-in {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+
+    .header-top {
+      overflow: hidden;
+      .mobil-button{
+        width: 24px;
+        display: block;
+        border: none;
+        background: none;
+        cursor: pointer;
+        span{
+         display: block;
+         background-color: $white;
+         width: 24px;
+         height: 2px;
+         margin-bottom: 6px;
+        }
+      }
+      .mobil-button{
+        display: none;
+      }
+      .header-middle{
+        width: 100%;
+        margin-top: 157px;
+
+        .header-left{
+            max-width: 670px;
+            width: 100%;
+            float: left;
+          h1{
+            line-height: 72px;
+            color: #ffffff;
+            @include font(900, 50px);
+          }
+          .header-btn {
+            @include font(700, 18px);
+            line-height: 26px;
+            background: rgba(43, 99, 227, 0.8);
+            padding-top: 17px;
+            margin-top: 70px;
+            @extend %header-btn;
+            color: $white;
+            width: 200px;
+            height: 60px;
+          }
+          .social-btn{
+            margin-top: 180px;
+            li{
+              display: inline-block;
+              margin: 0 20px 0 0;
+            }
+          }
+        }
+
+        .header-right{
+          background-color: $blue;
+          max-width: 41%;
+          height: 590px;
+          width: 100%;
+          float: right;
+          position: absolute;
+          right: 0;
+          top: 160px;
+          .header-content{
+            max-width: 420px;
+            width: 100%;
+            margin: 50px 0 0 80px;
+            .item{
+              display: block;
+              overflow: hidden;
+              margin-bottom: 50px;
+              span{
+                color: $white;
+                @include font(normal, 14px);
+                margin: 0 30px 0 0;
+                position: relative;
+                top: 8px;
+                display: block;
+                float: left;
+              }
+              h2{
+                color: $white;
+                @include font(900, 36px);
+              }
+              p{
+                color: $white;
+                @include font(normal, 14px);
+                line-height: 26px;
+                width: 296px;
+                margin: 16px 0 0 45px;
+              }
+            }
+          }
+
+          .fancybox{
+            position: absolute;
+            top: 218px;
+            left: -446px;
+            z-index: 2000;
+  
+            &:before{
+              content: url(../images/icon12.png);
+              position: absolute;
+              top: 70px;
+              left: 180px;
+            }
+            img{
+              box-shadow: 0 0 30px #1A1A1A;
+            }
+          }
+        }
+      }
+    }
+
+    .logo {
+      display: block;
+      float: left;
+      padding-top: 30px;
+    }
+    .top-menu {
+      float: right;
+      padding-top: 34px;
+      display: block;
+
+       li {
+        display: inline-block;
+        margin: 0 0 0 40px;
+
+        a {
+          color: $white;
+          line-height: 26px;
+          @include font(normal, 16px);
+
+          :last-of-type {
+            margin: 0;
+         }
+       }          
+      }
+    }
+  }
+}

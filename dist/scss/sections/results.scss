@@ -1,0 +1,38 @@
+@import 'mixin/fonts';
+
+.results {
+  background-color: $blue;
+  width: 100%;
+  height: 540px;
+
+  .results-in{
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    h2{
+      text-align: center;
+      @include font(900, 50px);
+      color: #ffffff;
+      line-height: 62px;
+      padding: 80px 0;
+    }
+    .net{
+      @include font(normal, 13px);
+      color: $white;
+      float: left;
+      margin: 20px 80px 0 0;
+      span{
+        padding: 0 0 0 10px;
+      }
+    }
+    .results-btn{
+      @extend %header-btn;
+      float: right;
+      background-color: $white;
+      color: $blue;
+      @include font(900, 18px);
+      width: 200px;
+      height: 60px;
+    }
+  }
+}

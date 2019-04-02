@@ -1,0 +1,149 @@
+@import 'mixin/fonts';
+.our-team {
+  background-color: $black;
+  .our-team-in{
+    max-width: 950px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 100px;
+    h2{
+      @include font(900, 48px);
+      text-align: center;
+      color: $white;
+      padding-bottom: 100px;
+    }
+  }
+}
+
+
+.slider{
+ .item{
+   position: relative;
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+  h3{
+    @include font(700, 24px);
+    color: $white;
+    line-height: 34px;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 203px;
+  }
+  span{
+    color: $white;
+    @include font(normal, 16px);
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  p{
+    text-align: center;
+    @include font(normal, 16px);
+    color: $white;
+    line-height: 26px;
+ }
+}
+
+.slick-list{
+  h3,
+  span,
+  p{
+    display: none;
+  }
+  
+  .slick-active{
+    &:before{
+      content: "";
+      background-color: rgba(0, 91, 233, 0.5);
+      position: absolute;
+      width: 143px;
+      height: 143px;
+      display: block;
+      border-radius: 150px;
+      left: 87px;
+     top: 1px;
+    }
+    img{
+     width: 143px;
+     height: 143px;
+    }
+     .social-btn{
+       display: none;
+     }
+   }
+   .slick-center{
+    &:before{
+      display: none !important;
+    }  
+    .social-btn{
+      display: block;
+      position: absolute;
+      left: 55px;
+      top: 0px;
+    }
+    h3,
+    span,
+    p{
+     display: block;
+    }
+  }
+}
+
+.slick-center img {
+  width: 180px !important;
+  height: 180px !important;
+  display: block;
+  position: absolute;
+  z-index: -1000;
+  left: 20%;
+}
+.social-btn{
+  img{
+   width: 26px !important;
+   height: 26px !important;
+   margin-top: 30px;
+  }
+}
+
+.next {
+  right: 0;
+  position: absolute;
+  cursor: pointer;
+  top: 170px;
+ }
+ .prev {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 170px;
+  z-index: 1000;
+ }
+ .slick-dots {
+  width: 190px;
+  margin: 50px auto 0;
+  li {
+    display: inline-block;
+    margin: 0 20px 0 0;
+    button {
+     border: 2px solid $white;
+     width: 20px;
+     height: 20px;
+     text-indent: -999999px;
+     border-radius: 50px;
+     background-color: $black;
+     cursor: pointer;
+     outline: none;
+   }
+   &:last-of-type{
+    margin: 0;
+   }
+  }
+  .slick-active{
+    button {
+      background-color: $blue;
+      border: 2px solid $blue;
+   }
+  }
+ }
+}

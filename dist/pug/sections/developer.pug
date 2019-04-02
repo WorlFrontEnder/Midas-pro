@@ -1,0 +1,25 @@
+div(class="development" id="Road")
+ .development-left
+  h2 Development of Fline Platform
+ .development-in
+  .table-development
+    mixin table-developer(month, desc, date)
+     .table-development-tr
+      .table-development-td
+       b= month
+
+      .table-development-td
+       p= desc
+     
+      .table-development-td 
+       b(class="date")= date
+
+    +table-developer('January', 'Coin launch Half of presale spent on the trading bot', '2019')
+    +table-developer('January', 'Buyback system implemented', '2019')
+    +table-developer('February', 'MNO listing Exchange listings', 'Q2')
+    +table-developer('February', 'Bot-tests and development', 'Q2')
+    +table-developer('2Q 2019', 'Release of the public bots usage', 'Q2')
+    +table-developer('2Q 2019', 'The start of the platform development', 'Q2')
+    +table-developer('3Q 2019', 'MVP of the platform', 'Q3')
+    +table-developer('3Q 2019', 'Automated deposits to trading bots', 'Q3')
+    +table-developer('3Q 2019', 'Automated deposits to trading bots', 'Q3')

@@ -1,0 +1,60 @@
+@import 'mixin/fonts';
+.development {
+ background-color: $black;
+ padding-top: 150px;
+ position: relative;
+ overflow: hidden;
+ padding-bottom: 50px;
+ .development-left {
+   background-color: $blue;
+   max-width: 30%;
+   position: absolute;
+   top: 70px;
+   left: 0;
+   width: 100%;
+   h2 {
+    @include font(900, 48px);
+    line-height: 62px;
+    color: $white;
+    width: 363px;
+    padding: 120px 0 100px;
+    margin: 0 0 0 110px;
+  }
+ }
+ .development-in {
+   max-width: 1233px;
+   width: 100%;
+   margin: 0 auto;
+   border-top: 1px solid $white;
+   position: relative;
+   z-index: 1000;
+   .table-development {
+    max-width: 830px;
+    width: 100%;
+    float: right;
+    padding-top: 50px;
+    .table-development-tr{
+        overflow: hidden;
+        width: 100%;
+        margin-bottom: 60px;
+     .table-development-td{
+        width: 275px;
+        display: table-cell;
+        color: $white;
+      b{
+        @include font(900, 18px);
+     }
+     p{
+        @include font(normal, 14px);
+        line-height: 24px;
+     }
+     .date{
+        text-align: right;
+        width: 100%;
+        display: block;
+     }
+    }
+   }
+  }
+ }
+}

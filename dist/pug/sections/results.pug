@@ -1,0 +1,12 @@
+div(class="results" id="trading")
+ .results-in
+  h2 Trading bots results
+  
+  mixin net(name, number)
+    div.net= name
+     span= number
+  +net('Net Profit:', '60,5991 BTC')
+  +net('Total Closed Trades:', '26')
+  +net('Percent Profitable', '65')
+
+  a(href="https://midas.investments/fline-trading-bot" target="_blank" class="results-btn") Invest

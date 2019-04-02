@@ -1,0 +1,159 @@
+.table-results-main
+ .table-results
+  .table-results-header
+   .table-results-tr
+    .table-results-th Trade
+    .table-results-th Type
+    .table-results-th SIgnal
+    .table-results-th Date/Time
+    .table-results-th Price
+    .table-results-th Contracts
+    .table-results-th Profit
+    .table-results-th Balance
+   hr.line-table
+   
+   mixin table-results(num, name, sell, date, price, contact, profit, balance, num2, name2, sell2, date2, price2, contact2, profit2, balance2)
+    .table-results-tr
+     .table-results-td= num
+     .table-results-td= name
+     .table-results-td.sell= sell 
+     .table-results-td= date 
+     .table-results-td= price 
+     .table-results-td= contact 
+     .table-results-td= profit 
+     .table-results-td= balance
+
+   mixin table-results2(num2, name2, sell2, date2, price2, contact2, profit2, balance2)
+    .table-results-tr
+     .table-results-td= num2 
+     .table-results-td= name2 
+     .table-results-td.buy= sell2
+     .table-results-td= date2 
+     .table-results-td= price2 
+     .table-results-td= contact2 
+     .table-results-td= profit2 
+     .table-results-td= balance2
+    hr.line-table
+
+   +table-results('1', 'Entry Shot', 'Sell', '2018-01-08 18:00:00', '14372.5', '14372.5', '', '1')
+   +table-results2('', 'Exit Short', 'buy', '2018-01-08 18:00:00', '9168.5', '', '1,1351', '')
+
+   +table-results('2', 'Entry Shot', 'Sell', '2018-01-08 18:00:00', '10168', '19575', '', '2,1351')
+   +table-results2('', 'Exit Short', 'buy', '2018-01-08 18:00:00', '10168', '', '0,2098', '')
+
+   +table-results('3', 'Entry Shot', 'Sell', '2018-01-08 18:00:00', '7165', '', '47685', '2,3449')
+   +table-results2('', 'Exit Short', 'buy', '2018-01-08 18:00:00', '7165', '', '1,9655', '')
+
+   +table-results('4', 'Entry Shot', 'Sell', '2018-01-08 18:00:00', '9291', '30884', '', '4,3104')
+   +table-results2('', 'Exit Short', 'buy', '2018-01-08 18:00:00', '9291', '', '0,9864', '')
+
+
+
+
+ .fon
+  .table-mobil
+   hr.line-table
+   .table-mobil-tr
+    .table-mobil-td-header Trade
+    .table-mobil-td 1
+
+   .table-mobil-tr
+    .table-mobil-td-header Type
+    .table-mobil-td Entry Shot
+
+   .table-mobil-tr
+    .table-mobil-td-header SIgnal 
+    .table-mobil-td.sell Sell
+
+   .table-mobil-tr
+    .table-mobil-td-header Date/Time
+    .table-mobil-td 2018-01-08 18:00:00
+  
+   .table-mobil-tr
+    .table-mobil-td-header Price
+    .table-mobil-td 14372.5
+
+   .table-mobil-tr
+    .table-mobil-td-header Contracts
+    .table-mobil-td 28744
+
+   .table-mobil-tr
+    .table-mobil-td-header Balance
+    .table-mobil-td 1
+  
+   .table-mobil-tr
+    .table-mobil-td-header Type
+    .table-mobil-td Entry Shot
+
+   .table-mobil-tr
+    .table-mobil-td-header SIgnal 
+    .table-mobil-td.sell Sell
+
+   .table-mobil-tr
+    .table-mobil-td-header Date/Time
+    .table-mobil-td 2018-01-08 18:00:00
+  
+   .table-mobil-tr
+    .table-mobil-td-header Price
+    .table-mobil-td 28744
+
+   .table-mobil-tr
+    .table-mobil-td-header Profit
+    .table-mobil-td 14372.5
+
+   hr.line-table
+   .table-mobil-tr
+    .table-mobil-td-header Trade
+    .table-mobil-td 1
+
+   .table-mobil-tr
+    .table-mobil-td-header Type
+    .table-mobil-td Entry Shot
+
+   .table-mobil-tr
+    .table-mobil-td-header SIgnal 
+    .table-mobil-td.sell Sell
+
+   .table-mobil-tr
+    .table-mobil-td-header Date/Time
+    .table-mobil-td 2018-01-08 18:00:00
+  
+   .table-mobil-tr
+    .table-mobil-td-header Price
+    .table-mobil-td 14372.5
+
+   .table-mobil-tr
+    .table-mobil-td-header Contracts
+    .table-mobil-td 28744
+
+   .table-mobil-tr
+    .table-mobil-td-header Balance
+    .table-mobil-td 1
+  
+   .table-mobil-tr
+    .table-mobil-td-header Type
+    .table-mobil-td Entry Shot
+
+   .table-mobil-tr
+    .table-mobil-td-header SIgnal 
+    .table-mobil-td.sell Sell
+
+   .table-mobil-tr
+    .table-mobil-td-header Date/Time
+    .table-mobil-td 2018-01-08 18:00:00
+  
+   .table-mobil-tr
+    .table-mobil-td-header Price
+    .table-mobil-td 28744
+
+   .table-mobil-tr
+    .table-mobil-td-header Profit
+    .table-mobil-td 14372.5
+
+   hr.line-table
+  
+
+   a(href="#" class="load-more") LOAD MORE
+ 
+  p
+   | Fline is an investment platform based on highly effective BitMex trading bots. The big chunk of bots profits are spent on buy-backs and price support. Fline’s goal is to create the simple, stable, and profitable sources of passive income based on algorithmic and price action trading.

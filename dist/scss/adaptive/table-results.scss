@@ -1,0 +1,140 @@
+
+@media (max-width: 1260px){
+ .table-results-main{
+  .table-results{
+    max-width: 1000px;
+    height: 630px;
+  }
+ }
+}
+
+
+
+
+@media (max-width: 1060px){
+  .table-results-main{
+    p{
+     padding: 0 2%; 
+     font-size: 13px;
+    }
+   .table-results{
+     max-width: 900px;
+     height: 630px;
+     .table-results-header{
+      .table-results-tr{
+        .table-results-th{
+        width: 11.9%;
+      }
+      .table-results-td{
+       width: 11.8%;
+      }
+     }
+    }
+   }
+  }
+ }
+
+
+
+
+ @media (max-width: 930px){
+  .table-results-main{
+   .table-results{
+     max-width: 750px;
+   }
+  }
+ }
+
+
+
+ @media (max-width: 770px){
+  .table-results-main{
+    
+    p{
+      font-size: 12px;
+      width: 300px;
+      padding-top: 150px;
+    }
+   .table-results{
+    display: none;
+   }
+  }
+  
+  
+
+  .table-mobil{
+    display: block;
+    background-color: $white;
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-top: 40px;
+    &:before{
+      content: "";
+      display: block;
+      background-color: red;
+      width: 100%;
+    }
+
+    .table-mobil-tr{
+      
+      overflow: hidden;
+      .table-mobil-td-header{
+        float: left;
+        padding: 16px 0 13px 18px;
+        width: 100px;
+        color: $blue2;
+        font-size: 14px;
+      }
+      .table-mobil-td{
+        float: left;
+        width: 190px;
+        font-size: 14px;
+        color: #1F2229;
+        margin-top: 16px;
+        padding: 0 0 0 35px;
+      }
+      .sell{
+        &:before{
+          display: block;
+          width: 8px;
+          height: 8px;
+          background-color: #E55541;
+          float: left;
+          content: "";
+          -webkit-border-radius: 10px;
+          border-radius: 10px;
+          margin: 5px 7px 0 0;
+        }
+      }
+    }
+  }
+  .line-table{
+    border: none;
+    border-bottom: 1px solid #D8D8D8;
+    width: 90%;
+    margin: 10px auto;
+  }
+  .load-more{
+    text-transform: uppercase;
+    color: $blue2;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px 0;
+    display: block;
+  }
+  .fon{
+    display: block;
+    position: relative;
+    &:before{
+      content: "";
+      background-color: #2B63E3;
+      display: block;
+      height: 400px;
+      position: absolute;
+      width: 100%;
+    }
+  }
+ }
